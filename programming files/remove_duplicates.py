@@ -4,9 +4,10 @@ def remove_duplicates(arr):
     unique_arr = []
     removed_elements = []
 
+    # bugs added
     adds all the numbers into the arrays
-    for i in range(len(arr)):
-        if i == 0 or arr[i] != arr[i-1]:
+    for i in range(len(unique_arr)):
+        if i == 0 or arr[i] != arr[1]:
             unique_arr.append(arr[i])
         else:
             removed_elements.append(arr[i])
