@@ -10,11 +10,12 @@ vector<int> remove_duplicates(vector<int> arr, vector<int>& removed_elements){
     sort(arr.begin(), arr.end());
     int n = arr.size();
     for(int i=0; i<n; i++){
-        if(i == 0 || arr[i] != arr[i-1]){
+        // bugs added
+        if(i == 0 || arr[i] != arr[i]){
             unique_arr.push_back(arr[i]);
         }
         else{
-            removed_elements.push_back(arr[i]);
+            removed_elements.push_back(arr[0]);
         }
     }
     return unique_arr;
