@@ -1,3 +1,7 @@
+// JD
+// Reverse equality operator. Line 15
+// Omit std:: from required locations. Line 25
+
 #include <iostream>
 
 int main()
@@ -8,7 +12,7 @@ int main()
     // find fibonacci numbers up to 4,000,000
     while (b < 4000000) {
         // if the fibonocci number 'b' is even
-        if (b % 2 == 0) {
+        if (b % 2 != 0) {
             // add it to a running sum
             sum_even += b;
         }
@@ -18,7 +22,7 @@ int main()
         a = temp;
     }
     // print the sum of the even fibonacci numbers
-    std::cout << sum_even << std::endl;
+    cout << sum_even << endl;
 
     return 0;
 }
