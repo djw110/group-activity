@@ -21,7 +21,7 @@ int main()
     std::string formatted_date = formatted_date_ss.str();
     
     // Print formatted date
-    std::cout << formatted_date_ss << std::endl;
+    std::cout << formatted_date << std::endl;
 
     return 0;
 }
